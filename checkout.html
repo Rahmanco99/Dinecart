@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <title>Checkout - Dinecart.pk</title>
+    <link href=https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css rel=stylesheet>
+    <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css>
+    <link rel="stylesheet" href="CSS/style-min-css.css">
+</head>
+
+<body>
+    <div id=page class="site page-checkout">
+        <aside class="site-off desktop-hide">
+            <div class=off-canvas>
+                <div class="canvas-head flexitem">
+                    <div class=logo><a href=index.html>Dinecart.pk</a></div>
+                    <a href=# class="t-close flexcenter"><i class=ri-close-line></i></a>
+                </div>
+                <div class=departments></div>
+                <nav></nav>
+                <div class=thetop-nav></div>
+            </div>
+        </aside>
+        <header>
+            <div class="header-top mobile-hide">
+                <div class=container>
+                    <div class="wrapper flexitem">
+                        <div class=left>
+                            <ul class="flexitem main-links">
+                                <li><a href=featured-product.html>Featured Products</a></li>
+                            </ul>
+                        </div>
+                        <div class=right>
+                            <ul class="flexitem main-links">
+                                <li><a href=#>Sign Up</a></li>
+                                <li><a href=#>My Account</a></li>
+                                <li><a href=#>Order Tracking</a></li>
+                                <li class=current>PKR</li>
+                                <li class=current>English</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=header-nav>
+                <div class=container>
+                    <div class="wrapper flexitem">
+                        <a href=# class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
+                        <div class="left flexitem">
+                            <div class=logo><a href=index.html><span class=circles>Dinecart.pk</span></a></div>
+                            <nav class=mobile-hide>
+                                <ul class="flexitem second-links">
+                                    <li><a href=index.html>Home</a></li>
+                                    <li><a href=shop.html>Shop</a></li>
+                                    <li><a href=about.html>About Us</a></li>
+                                    <li>
+                                        <a href=contact.html>Contact Us
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class=right>
+                            <div id=header-placeholder></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main mobile-hide">
+                <div class=container>
+                    <div class="wrappers flexitem">
+                        <div class=left>
+                            <div class=dpt-cat>
+                                <div class=dpt-head>
+                                    <div class=main-text>All Departments</div>
+                                    <div class="mini-text mobile-hide">Total 87 Products</div>
+                                    <a href=# class="dpt-trigger mobile-hide">
+                                        <i class="ri-menu-3-line ri-xl"></i>
+                                        <i class="ri-close-line ri-xi"></i>
+                                    </a>
+                                </div>
+                                <div class=dpt-menu>
+                                    <ul class=second-links>
+                                        <li class="has-child beauty">
+                                            <a href=dinnerset.html>
+                                                <div class=icon-large></div>
+                                                Dinner Set
+                                            </a>
+                                        </li>
+                                        <li class="has-child electronic">
+                                            <a href=plateset.html>
+                                                <div class=icon-large></div>
+                                                Plate Set
+                                            </a>
+                                        </li>
+                                        <li class="has-child fashions">
+                                            <a href=looseitem.html>
+                                                <div class=icon-large></div>
+                                                Loose Item
+                                            </a>
+                                        </li>
+                                        <li class="has-child fashions">
+                                            <a href=decoration.html>
+                                                <div class=icon-large></div>
+                                                Decoration Item
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class=single-cart>
+                <div class=container>
+                    <div class=wrapper>
+                        <div class="checkout flexwrap">
+                            <div class="item left styled">
+                                <h1>Shipping Address</h1>
+                                <form id=checkout-form>
+                                    <p>
+                                        <label for=fname>First Name*</label>
+                                        <input type=text id=fname required>
+                                    </p>
+                                    <p>
+                                        <label for=lname>Last Name*</label>
+                                        <input type=text id=lname required>
+                                    </p>
+                                    <p>
+                                        <label for=address>Street Address*</label>
+                                        <input type=text id=address required>
+                                    </p>
+                                    <p>
+                                        <label for=city>City*</label>
+                                        <input type=text id=city required>
+                                    </p>
+                                    <p>
+                                        <label for=state>State/Province*</label>
+                                        <input type=text id=state required>
+                                    </p>
+                                    <p>
+                                        <label for=postal>Zip/Postal Code</label>
+                                        <input type=number id=postal>
+                                    </p>
+                                    <p>
+                                        <label for=country>Country*</label>
+                                        <select id=country required>
+                                            <option value=Pakistan selected>Pakistan</option>
+                                        </select>
+                                    </p>
+                                    <p>
+                                        <label for=phone>Phone Number*</label>
+                                        <input type=tel id=phone required>
+                                    </p>
+                                    <div class=primary-checkout>
+                                        <button type=submit class=primary-button name=btn>Place Order</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="checkout-container item right">
+                                <h2>Order Summary</h2>
+                                <div class="summary-order is_sticky">
+                                    <div class="summary-totals summary">
+                                        <ul>
+                                            <li>
+                                                <span>Subtotal</span>
+                                                <p>Rs<span id=cart-subtotal name=subtotal>0</span></p>
+                                             
+                                            </li>
+                                            <li>
+                                                <span>Shipping:</span>
+                                                <p>Rs<span id=shipping-fee name=shippingfee>200</span></p>
+                                               
+                                            </li>
+                                            <li>
+                                                <span>Total</span>
+                                                <strong>Rs<span id=cart-total name=total>0</span></strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id=checkout-items name=citem></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class=newsletter>
+                <div class=container>
+                    <div class=wrapper>
+                        <div class=box>
+                            <div class=content>
+                                <h3>Join Our Newsletter</h3>
+                                <p>Get E-mail updates about our latest shop and <strong>special offers</strong></p>
+                            </div>
+                            <form action class=search>
+                                <span class=icon-large><i class=ri-mail-line></i></span>
+                                <input type=mail placeholder="Your email address" required>
+                                <button type=submit>Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=widgets>
+                <div class=container>
+                    <div class=wrapper>
+                        <div class=flexwrap>
+                            <div class=row>
+                                <div class="item mini links">
+                                    <h4>Help & Contact</h4>
+                                    <ul class=flexcol>
+                                        <br>
+                                        <li>Your Account</li>
+                                        <li>Shipping Rates</li>
+                                        <li>Help</li>
+                                        <li><a href=contact.html>Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class=row>
+                                <div class="item mini links">
+                                    <h4>Product Categories</h4>
+                                    <ul class=flexcol>
+                                        <br>
+                                        <li><a href=dinnerset.html>Dinner Set</a></li>
+                                        <li><a href=plateset.html>Plate Set</a></li>
+                                        <li><a href=looseitem.html>Loose Item</a></li>
+                                        <li><a href=decoration.html>Decoration Item</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class=row>
+                                <div class="item mini links">
+                                    <h4>Paymeni Info</h4>
+                                    <ul class=flexcol>
+                                        <br>
+                                        <li>JazzCash</li>
+                                        <li>Easypaise</li>
+                                        <li>NayaPay</li>
+                                        <li>SadaPay</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class=row>
+                                <div class="item mini links">
+                                    <h4>About Us</h4>
+                                    <ul class=flexcol>
+                                        <br>
+                                        <li><a href=about.html>Company info</a></li>
+                                        <li>Policies</li>
+                                        <li>Customer review</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=footer-info>
+                <div class=container>
+                    <div class=wrapper>
+                        <div class=flexcol>
+                            <div class=logos>
+                                <a href=index.html>Dinecart.pk</a>
+                            </div>
+                            <div class=socials>
+                                <ul class=flexitem>
+                                    <li><a href=https://www.facebook.com/profile.php?id=61565851667270 target=_blank><i
+                                                class=ri-facebook-line></i></a></li>
+                                    <li><a href=https://www.instagram.com/demine.pk/ target=_blank><i
+                                                class=ri-instagram-line></i></a></li>
+                                    <li><a href=https://whatsapp.com/channel/0029VakWng6LtOj38DdYS33P target=_blank><i
+                                                class=ri-whatsapp-line></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class=mini-text>Copyright ©2024 Dinecart.pk. All right reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="menu-bottom desktop-hide">
+            <div class=container>
+                <div class=wrapper>
+                    <nav>
+                        <ul class=flexitem>
+                            <li>
+                                <a href=index.html>
+                                    <i class=ri-home-line></i>
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=shop.html>
+                                    <i class=ri-store-line></i>
+                                    <span>Shop</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=featured-product.html>
+                                    <i class=ri-bar-chart-line></i>
+                                    <span>Featured</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href=contact.html class=t-search>
+                                    <i class="ri-questionnaire-line"></i>
+                                    <span>Help & Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="desktop-hide">
+            <div class=container>
+                <div class=wrapper>
+                    <form class=search>
+                        <a href=contact.html class="t-close search-close"></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class=backtotop>
+            <a href=# class=flexcol>
+                <i class=ri-arrow-up-line></i>
+                <span>Top</span>
+            </a>
+        </div>
+        <div class=overlay></div>
+    </div>
+    <script src=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.js></script>
+    <script src=https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js></script>
+    <script src=JS/script-min-js.js></script>
+
+    <script>function updateCartCount() { const e = (JSON.parse(localStorage.getItem("cart")) || []).reduce(((e, t) => e + t.quantity), 0); document.getElementById("cart-count").textContent = e }
+        fetch("header.html").then((e => e.text())).then((e => { document.getElementById("header-placeholder").innerHTML = e, updateCartCount() })).catch((e => console.error("Error loading header:", e)))</script>
+    <script>document.addEventListener('DOMContentLoaded', function () {
+            emailjs.init("PbI78aYATFoOT-sOd"); function loadCheckoutItems() { const cart = JSON.parse(localStorage.getItem('cart')) || []; const checkoutItemsContainer = document.getElementById('checkout-items'); const cartSubtotalEl = document.getElementById('cart-subtotal'); const shippingFeeEl = document.getElementById('shipping-fee'); const cartTotalEl = document.getElementById('cart-total'); const shippingFee = 200; const freeShippingThreshold = 5000; let subtotal = 0; checkoutItemsContainer.innerHTML = ''; console.log('Cart:', cart); if (cart.length === 0) { checkoutItemsContainer.innerHTML = '<p>Your cart is empty.</p>'; document.querySelector('button[type="submit"]').disabled = true; } else { document.querySelector('button[type="submit"]').disabled = false; cart.forEach(item => { console.log('Cart Item:', item); checkoutItemsContainer.innerHTML += `<p>${item.name}-PKR ${item.price}(x${item.quantity})</p>`; subtotal += item.price * item.quantity; }); cartSubtotalEl.textContent = subtotal.toFixed(2); const shipping = subtotal >= freeShippingThreshold ? 0 : shippingFee; shippingFeeEl.textContent = shipping.toFixed(2); cartTotalEl.textContent = (subtotal + shipping).toFixed(2); } }
+            function clearFormFields() { document.getElementById('checkout-form').reset(); }
+            document.getElementById('checkout-form').addEventListener('submit', function (event) {
+                event.preventDefault(); const name = document.getElementById('fname').value + ' ' + document.getElementById('lname').value; const address = document.getElementById('address').value; const phone = document.getElementById('phone').value; const city = document.getElementById('city').value; const state = document.getElementById('state').value; const postal = document.getElementById('postal').value; const country = document.getElementById('country').value; const cart = JSON.parse(localStorage.getItem('cart')) || []; if (cart.length === 0) { alert('Your cart is empty. Please add items to the cart before checking out.'); return; }
+                const orderData = { name: name, address: address, city: city, state: state, postal: postal, country: country, phone: phone, cart: document.getElementById('checkout-items').textContent, subtotal: document.getElementById('cart-subtotal').textContent, shipping: document.getElementById('shipping-fee').textContent, total: document.getElementById('cart-total').textContent }; console.log('Order Data:', orderData); emailjs.send('service_platter.pk', 'template_4rbyimp', orderData).then(function (response) { console.log('SUCCESS!', response.status, response.text); localStorage.removeItem('cart'); clearFormFields(); alert('Thank you for your order! Your cart has been cleared.'); window.location.href = 'index.html'; }, function (error) { console.error('FAILED...', error); alert('There was an error processing your order. Please try again later.'); });
+            }); loadCheckoutItems();
+        });</script>
+</body>
+
+</html>
